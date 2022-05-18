@@ -9,13 +9,14 @@ menu.addEventListener("click", () => {
 /*------------------ Cards Section----------------------------- */
 let biographySet = document.querySelector("#biography__set");
 let cardInfo = document.querySelector("#close__biography");
-let homeBtn = document.querySelector("#home__btn");
+//let homeBtn = document.querySelector("#home__btn");
 let popUp = document.querySelector(".pop__up");
 let body = document.querySelector("body");
 
 let cardInstructors = document.querySelector("#instructors");
 let infoInstructors = document.querySelector("#info__instructors");
 
+/*
 homeBtn.addEventListener("click", (e) => {
   e.preventDefault();
   biographySet.classList.toggle("active");
@@ -24,7 +25,8 @@ homeBtn.addEventListener("click", (e) => {
   popUp.innerHTML = escrito;
   body.style.overflowY = "hidden";
 });
-
+*/
+/*
 cardInfo.addEventListener("click", () => {
   biographySet.classList.toggle("active");
   popUp.classList.toggle("active");
@@ -274,3 +276,28 @@ let returnFunction = (value) => {
     instructorsCounter = 0;
   }
 };
+*/
+let btnWhatsapp = document.querySelector("#btnWhatsapp"),
+  btnFacebook = document.querySelector("#btnFacebook"),
+  btnInstagram = document.querySelector("#btnInstagram"),
+  btnTikTok = document.querySelector("#btnTikTok");
+
+btnWhatsapp.addEventListener("click", () => {
+  window.open(
+    "https://api.whatsapp.com/send/?phone=5491158758402&text&app_absent=0"
+  );
+});
+
+btnFacebook.addEventListener("click", () => {
+  window.open("https://www.facebook.com/yobailodetodo");
+});
+
+btnInstagram.addEventListener("click", () => {
+  window.open("https://www.instagram.com/yobailodetodo/");
+});
+
+btnTikTok.addEventListener("click", () => {
+  window.open(
+    "https://m.tiktok.com/h5/share/usr/6785239001508938758.html?_d=secCgwIARCbDRjEFSACKAESPgo8T%2FLks8FqzvWmRGAd1dWwQVtul0b%2FzJYJjptMq%2FdW3T2lJkgaUPmeqvPr41cNWQj1stk%2BFlA9HAYxcGLJGgA%3D&language=es&sec_uid=MS4wLjABAAAAbjol8UV3v24oZTfoo7VDEhbXZtX4W95Uoj6CbfnDHh1cdo4pzfk_igO1vk6-4lZI&sec_user_id=MS4wLjABAAAAl5Q1Acnomgua0P8OH6KIVUHELrPkt8VBUanxF_jJ3_knwfzbUmYW0dMb6NUAs5Xz&share_app_id=1233&share_author_id=6785239001508938758&share_link_id=131dabff-374d-4ab7-b404-056da7d68ce0&timestamp=1643496250&u_code=dbai62bedca2lf&user_id=6803818351857959942&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+  );
+});
