@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+@font-face {
+  font-family: futuraMedium;
+  src: url("futura\ medium\ bt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: glacialIndiference;
+  src: url("GlacialIndifference-Regular.otf") format("opentype");
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #eee;
+}
+
+:root {
+  --primary-color: rgb(255, 255, 43);
+  --secondary-color: rgb(0, 66, 186);
+}
+
+/*-----------------Class and Schedule-----------------------*/
+
+#schedule {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
